@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>KadaiThymeleaf</title>
+</head>
+<body>
+    <h1>Thymeleaf課題</h1>
+    <h3>入力画面</h3>
+    <p th:text="'入力された値は、「' + ${val} + '」です。'"></p>
+    <p><a th:href="@{/input/(previous=${val})}">入力画面へ戻る</a></p>
+</body>
+</html>
